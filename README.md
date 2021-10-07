@@ -9,7 +9,7 @@ Train.csv is a DataFrame that holds user id, time of order and product id in eac
 Original DataFrame is transformed by pivoting into MultiIndex DataFrame to get every user carts in history order (the last is more recent). Every user has unique cart products which are collected to form a full cart possible for a user based on users history. This full cart vector is used to transform user history over time  to one_hot vectors according to what products at a time were in a cart. Stacked together these vectors form a history matrix for each user. As full cart vectors are different and history lengths vary in a wide range (min is 3, max is over 1500), history matrices were transformed to one length. The length was calculated automatically to get 70% of user's histories under the length. 
 
 ## Usage
-run.py hiiden_size batch_size learning_rate num_epochs verbose
+run.py hiden_size batch_size learning_rate num_epochs verbose
 
 positional arguments:
 
