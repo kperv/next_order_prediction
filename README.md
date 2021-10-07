@@ -12,11 +12,16 @@ Original DataFrame is transformed by pivoting into MultiIndex DataFrame to get e
 run.py hiiden_size batch_size learning_rate num_epochs verbose
 
 positional arguments:
-  hidden_size    Number of sentences in a summary
-  batch_size     The size of the batch for training
-  learning_rate  Learning rate for optimization
-  num_epochs     Number of epochs for training
-  verbose        Print state messages
+
+hidden_size - Number of sentences in a summary
+
+batch_size - The size of the batch for training
+
+learning_rate - Learning rate for optimization
+
+num_epochs - Number of epochs for training
+
+verbose - Print state messages
 
 
 ## Architecture
