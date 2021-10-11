@@ -1,5 +1,5 @@
-# next_order_prediction
-Predict the user's next order for SberMarket Kaggle Competition
+# Next order prediction
+Predict the user's next order for SberMarket Kaggle Competition. The order is a list of shop category ids transformed into a one-hot vector and is based on user's cart history.
 
 ## Introduction
 An online shop collected a history of user purchases and would like to have a prediction for every user for the next order.
@@ -11,7 +11,7 @@ Original DataFrame is transformed by pivoting into MultiIndex DataFrame to get e
 ## Usage
 run.py hiden_size batch_size learning_rate num_epochs verbose
 
-positional arguments:
+*positional arguments*:
 
 hidden_size - Number of sentences in a summary
 
@@ -33,4 +33,4 @@ For training the history matrices without the last time were used as training da
 The full run on args=(64, 64, 0.01, 30, True) is around 10 mins on GPU or 20 mins on M1 with 1Gb load on GPU. Best num_epoch is in (20, 35) based on more than 10 runs. Over 40 overfitting is observed.
 
 ## Score
-Best f1-beta score is 0.3 =(
+F1 score was used for model evaluation. The best value on training data is 0.5.
